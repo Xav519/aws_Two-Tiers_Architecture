@@ -1,4 +1,4 @@
-# Day 22 – AWS RDS Database with Terraform (Mini Project 8)
+# AWS RDS Database with Terraform
 
 ## 📌 Project Summary
 
@@ -17,7 +17,7 @@ All resources are managed as code and can be deployed or destroyed consistently.
 
 ## 🏗️ High-Level Architecture
 
-<img src="./Two-Tiers-Architecture.png.png" alt="TwoTiersArchitecture" width="500"/>
+<img src="./Two-Tiers-Architecture.png" alt="TwoTiersArchitecture" width="500"/>
 
 The EC2 instance is publicly accessible, while the database remains isolated and only reachable from the web server.
 
@@ -26,11 +26,11 @@ The EC2 instance is publicly accessible, while the database remains isolated and
 ## 📁 Project Layout
 
 ```
-day22/
+aws_Two-Tiers_Architecture/
 ├── main.tf
 ├── variables.tf
+├── provider.tf
 ├── outputs.tf
-├── terraform.tfvars.example
 ├── README.md
 └── modules/
     ├── vpc/
@@ -79,6 +79,8 @@ After deployment, retrieve the application URL:
 ```
 terraform output application_url
 ```
+
+<img src="./siteDemo.png" alt="siteDemo" width="500"/>
 
 Available endpoints:
 - `/` → Home page
