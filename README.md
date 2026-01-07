@@ -1,4 +1,4 @@
-# AWS RDS Database with Terraform
+# AWS Two-Tiers Architecture (with RDS database)
 
 ## 📌 Project Summary
 
